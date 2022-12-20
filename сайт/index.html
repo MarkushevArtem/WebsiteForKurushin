@@ -3,36 +3,65 @@
     <head>
         <meta charset="utf-8">
         <style>
-  .rt {
-    background-color: #92a1cf; 
-    color: #fff;  
-    width: 300px;
-    height: 45px;
-    font:15pt Helvetica, sans-serif;
-    border-radius: 1.3rem;
-    text-decoration: none;
-  }
-  h1
-  {
-    color: green;
-  }
+    .rt 
+    {
+  padding:10px;
+  border-radius:10px;
+    }
+    body 
+    {
+        background-image: url('assets/images/intri_m_video_dark.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    .sliding-button {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
 
 </style>
         <title>Заметки</title>
     </head>
-    <body style = "background-color: #EECFA1;">
+    <body>
         <h1 align="center">Добро пожаловать в M.VideoParser</h1>
         <form action="signIn.php" method="POST">
             <p align="center"><input class = rt type="text" name="login" placeholder="Введите логин" size="28" /></p>
-            <p align="center"><input class = rt type="password" name="password" placeholder="Введите пароль" size="28" /></p>
-            <p align="center">
-                <button class = rt type="submit">Войти</button>
-            </p>
-        </form>
-        <form action="signUp.php">
-            <p>
-            <p align="center"><button class = rt type="submit">Зарегистрироваться</button></p>
-            </p>
-        </form>
-    </body>
+            <p align="center"><input class="floating-button" type="password" name="password" placeholder="Введите пароль" size="28" /></p>
+            <p align="center"><a href="signIn.php" class="sliding-button" type="submit">Войти</a></p>
+            <p align="center"><a href="signUp.php" class="sliding-button" type="submit">Зарегистрироваться</a></p>
+            
 </html>
+
