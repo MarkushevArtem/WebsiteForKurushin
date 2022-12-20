@@ -32,6 +32,9 @@ require 'db.php';
     }
     $backgr ="<body style='background-color: #EECFA1;'>";
     echo $backgr;
-    $try = exec("Mvideo_parse.py")
+    $command = escapeshellcmd('Mvideo_parse.py');
+$output = shell_exec($command);
+echo $output;
 ?>
+
 
