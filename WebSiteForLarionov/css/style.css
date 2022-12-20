@@ -1,5 +1,4 @@
 .single-goods {
-    display:inline-block;
     width: 200px;
     height: 300px;
     margin: 10px;
@@ -10,3 +9,6 @@
 .single-goods img {
     width: 200px;
 }
+
+
+

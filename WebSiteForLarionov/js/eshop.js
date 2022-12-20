@@ -13,9 +13,12 @@ function loadGoods() {
             out+='<p>Старая цена: '+data[key]['item_basePrice']+'</p>';
             out+='<p>Цена по скидке: '+data[key]['item_salePrice']+'</p>';
             out+='<img src="'+data[key].image+'">';
-            out+='<button data-art="'+data[key].productId+'">Перейти к товару</button>';
+            out+='<a href="'+data[key].item_link+'" target="_blank">Перейти к товару</a>';
             out+='</div';
         }
         $('#goods').html(out);
-    })
+    });
 }
+
+
+
