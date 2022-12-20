@@ -21,20 +21,15 @@ require 'db.php';
             else
             {
             include 'index.html';
-            echo ("Пароль неправильный!");
+            echo "<center>Пароль неправильный!</center>";
             }
         }
         else
             {
             include 'index.html';
-            echo ("Такого пользователя не существует!");
+            echo "<center>Такого пользователя не существует!</center>";
             }
     }
-    $backgr ="<body style='background-color: #EECFA1;'>";
-    echo $backgr;
-    $command = escapeshellcmd('Mvideo_parse.py');
-$output = shell_exec($command);
-echo $output;
 ?>
 
 
