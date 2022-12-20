@@ -189,6 +189,49 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 -190px;
 }
 
+/* map */
+
+.map {
+	margin: 0 ;
+}
+
+.map_link {
+	margin: 0 540px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color:#000000;
+	text-decoration: none;
+}
+.map_point {
+	margin: 0 580px;
+	font-size: 20px;
+	color:#000000;
+	text-decoration: none;
+}
+
+/* Footer */
+.footer {
+	padding: 65px;
+
+	background: #f8f8f8
+}
+
+.footer__logo {
+	margin: 0 452px;
+	font-size: 40px;
+	font-weight: 700;
+	color: #ccc;
+}
+
+/* Copyright */
+.copyright {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 20px 0px;
+	font-size: 14px;
+	color: #00000;
+	text-align: center;
+}
+
 
 
 
